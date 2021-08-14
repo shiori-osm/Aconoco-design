@@ -1,0 +1,58 @@
+/* common */
+/* small-screen */
+
+
+.breakfast-card-container{
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+   max-width: 1200px;
+  }
+
+img.card__img{
+  max-width: 100%;
+}
+
+.card__info{
+  padding: 30px;
+
+}
+
+.card__category{
+  width: 80px;
+  background-color: #238888;
+  color:#fff;
+  padding: 5px ;
+}
+.card__desc{
+
+}
+
+.card__footer{
+  text-align: right;
+ margin-bottom: 30px;
+
+}
+
+.card__link{
+  color:#238888;
+}
+
+.card__date{
+  display: inline;
+
+}
+
+/* midium-screen */
+@media(min-width:768px){
+  .breakfast-card-container{
+    width: 45%;
+  }
+
+
+}
+
+/* large-screen */
+@media(min-width:1000px){
+
+}

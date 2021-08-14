@@ -1,0 +1,15 @@
+body{
+  padding: 64px;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background: orange;
+
+  transition-property :border-radius ;
+  transition-duration:1s ;
+}
+
+.box:hover{
+  border-radius: 50%;
+}
