@@ -1,0 +1,148 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック";
+  color: #232323;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+.inner {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  padding-top: 30px;
+  justify-content: space-between;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  margin-left: 30px;
+  width: 100px;
+}
+
+.header-title-logo {
+  border-radius: 10px;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-list-item {
+  margin-right: 30px;
+}
+
+.contact-form-title {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-form-title-ja {
+  font-size: 2em;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.contact-form-title-en {
+  font-size: 1.5em;
+}
+
+.contact-form-desc {
+  margin: 30px 0;
+  line-height: 1.5em;
+}
+
+.contact-form-table {
+  width: 100%;
+}
+
+.contact-form-table-tr {
+  border: 1px solid #efefef;
+}
+
+.contact-form-table-th {
+  border: 1px solid #ccc;
+  padding: 50px 0 50px 20px;
+  font-weight: normal;
+  text-align: left;
+  background-color: #efefef;
+}
+
+.contact-form-table-textarea {
+  padding: 50px 0;
+}
+
+.contact-form-table input, .contact-form-table textarea {
+  border: 1px solid #E6EEF3;
+  background-color: #E6EEF3;
+  margin-left: 20px;
+  background-color: #fff;
+}
+
+.contact-form-table input {
+  background-color: #E6EEF3;
+  width: 90%;
+  padding: 20px;
+}
+
+.contact-form-table textarea {
+  display: inline-block;
+  padding: 20px;
+  padding-bottom: 0;
+  width: 90%;
+  height: 100px;
+  background-color: #E6EEF3;
+}
+
+.contact-form-table input::placeholder,
+.contact-form-table textarea::placeholder {
+  color: #bbb;
+}
+
+.footer {
+  width: 70%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-flex-title {
+  border-bottom: 1px solid #232323;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.footer-flex-address {
+  line-height: 1.5em;
+}
+
+.footer-nav-list {
+  margin-top: 30px;
+  display: flex;
+}
+
+.footer-nav-list-item {
+  margin-right: 30px;
+}
+
+.footer-copy {
+  font-size: .5em;
+  text-align: center;
+  padding: 30px 0;
+}

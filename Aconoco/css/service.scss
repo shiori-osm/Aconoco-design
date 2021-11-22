@@ -1,0 +1,162 @@
+// 色設定
+$orange: #F7B669;
+$font: #282828;
+$background-color: #FFFEFC;
+$box-color: #FBF2EF;
+$line-color: #FDE8D0;
+
+.service-main{
+  width: 60%;
+  margin: auto;
+}
+
+.section-logo{
+  padding: 100px 0 60px 0;
+  width: 40%;
+  margin: auto;
+  animation: UpAndDown 2s infinite;
+}
+@keyframes UpAndDown {
+  0%{
+    transform: translateY(50px);
+  }
+  50%{
+    transform: none;
+  }
+  100%{
+    transform: translateY(50px);
+  }
+}
+
+.service-top{
+  width: 80%;
+  margin: auto;
+  &-img{
+    padding: 60px 0 30px 0;
+  }
+  &-flex{
+    display: flex;
+    align-items: center ;
+    img{
+      width: 150px;
+    }
+    &-text{
+      font-size: 1.2em;
+      span{
+        white-space: nowrap;
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 3% 0;
+        background-color: $line-color;
+      }
+    }
+  }
+}
+
+.container{
+  &-box{
+    margin-bottom: 5%;
+    padding: 5%;
+    border: 5px solid $orange;
+    border-radius: 50px;
+    &-title{
+      text-align: center;
+      &-img{
+        width: 30%;
+        margin: auto;
+        margin-bottom: 3%;
+      }
+      h2{
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      &-price{
+        font-size: 1.2em;
+        padding-bottom: 3%;
+      }
+      &-small{
+        padding-bottom: 3%;
+      }
+    }
+    &-ex{
+      h3{
+        font-size: 1.2em;
+        font-weight: 500;
+        margin: 2em 0 1em 0;
+        border-left: 7px solid $orange;
+        padding: 7px;
+      }
+      p{
+        padding-left: 10px;
+      }
+      span{
+        background-color: $line-color;
+      }
+    }
+    &-btn{
+      width: 150px;
+      margin: 5%;
+      margin-left: auto;
+      text-align: center;
+      transition: 0.5s;
+      border-bottom: 2px solid $orange;
+    }
+    &-btn:hover{
+      background-color: $line-color;
+    }
+  }
+}
+
+// howto 制作の流れ
+.howto{
+  &-container{
+    width: 100%;
+    border-bottom: 2px solid $orange;
+    &-flex{
+      padding: 3% 0;
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      img{
+        width: 10%;
+      }
+      &-text{
+        padding-left: 5%;
+        h3{
+          font-size: 1.5em;
+          font-weight: normal;
+          padding-bottom: 2%;
+        }
+        a{
+          padding: 0 2%;
+          border-bottom: 2px solid $orange;
+        }
+        span{
+          background-color: $line-color;
+        }
+      }
+    }
+  }
+}
+
+// ご相談受付中
+.welcome{
+  padding: 100px 0;
+  &-img{
+    width: 30%;
+    margin: auto;
+    padding-top: 8%;
+  }
+  span{
+    display: inline-block;
+    border-bottom: 3px solid $orange;
+    font-size: 1.2em;
+    margin: 2% 0;
+  }
+  &-large{
+    padding: 5% 0 2% 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,263 @@
+body{
+  font-family: "游ゴシック";
+  color: #232323;
+}
+img{
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a{
+  color: inherit;
+}
+.inner{
+  width: 80%;
+  margin: auto;
+}
+.section{
+  &-title{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 15px;
+    &-sub{
+      &-border{
+        border-bottom: 1px solid #232323 ;
+        width: 100px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.main{
+  height: 100vh;
+
+}
+.fv{
+  &-title{
+    text-align: center;
+    padding: 70px 0;
+    background-color: #fff;
+    font-size: 2em;
+    font-weight: normal;
+  }
+  &-catch{
+    background-image: url(../img/リクルートトップ.png);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    &-main{
+      font-size: 1.8em;
+      margin-bottom: 50px;
+    }
+    &-sub{
+      font-size: 1.2em;
+    }
+  }
+}
+
+.header{
+  background-color: #fff;
+  position: relative;
+  padding-top: 30px;
+  justify-content: space-between;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  &-title{
+    margin-left: 30px;
+    width: 100px;
+    &-logo{
+      border-radius: 10px;
+
+    }
+    }
+  &-nav{
+    &-list{
+      display: flex;
+      &-item{
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.recruit{
+  background-color: #fff;
+  &-flex{
+    display: flex;
+    &-desc{
+      padding-top: 30px;
+      width:30% ;
+      padding-left: 30px;
+      &-p{
+        line-height: 1.5em;
+      }
+    }
+    &-imgs{
+      margin-left: auto;
+    }
+  }
+}
+
+.recruitment{
+  padding: 60px 0;
+  &-title{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &-container{
+    &-title{
+      background-color: #C0D6CE;
+      text-align: center;
+      padding: 30px 0;
+      &-ja{
+        font-weight: bolder;
+        font-size: 2.5em;
+      }
+      &-en{
+        color: #fff;
+        opacity: 0.8;
+        font-weight: bolder;
+        font-size: 2em;
+        position: relative;
+        top: -15px;
+        right: -50px;
+      }
+    }
+    &-flex{
+      align-items: center;
+      display: flex;
+      &-desc{
+        width: 50%;
+        &-title{
+          font-weight: normal;
+          font-size: 1.2em;
+          margin-bottom: 30px;
+        }
+        &-p:not(:last-child){
+          margin-bottom: 15px;
+        }
+      }
+      &-img{
+        object-fit: cover;
+        width: 50%;
+      }
+    }
+  }
+}
+.designer{
+  background-color: #F6B8B8;
+}
+.engineer{
+  background-color: #86A2BC;
+}
+
+.interview{
+  background-color: #fff;
+  padding-top: 60px ;
+  &-title{
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  &-flex{
+    display: flex;
+    flex-wrap: wrap;
+    &-link{
+      width: calc(100% / 3);
+      position: relative;
+      &-desc{
+        padding-top: 80px ;
+        text-align: center;
+        color: #fff;
+        &-name{
+          font-size: 1.5em;
+          margin: 5% 0;
+        }
+      }
+    }
+    .mask{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.4);
+      transition: all 0.2s;
+    }
+    &-link:hover .mask{
+      opacity: 1;
+    }
+  }
+}
+
+.environment{
+  &-flex{
+    &-img{
+      margin-left: auto;
+      width: 60%;
+      position: relative;
+      top :100px;
+    }
+    &-container{
+      padding: 50px ;
+      background-color: #efefef;
+      width: 60%;
+      &-desc{
+        &-title{
+          font-weight: normal;
+          margin: 20px 0;
+          font-size: 1.2em;
+        }
+        &-sub{
+          line-height: 1.5em;
+        }
+        &-in{
+          align-items: center;
+          justify-content: space-between;
+          display: flex;
+        }
+        &-link{
+          display: inline-block;
+          background-color: #FFD200;
+          text-align: center;
+          padding: 20px 40px;
+        }
+      }
+    }
+  }
+}
+
+
+.footer{
+  width: 70%;
+  margin: auto;
+  padding-top:30px ;
+  &-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title{
+      border-bottom: 1px solid #232323;
+      font-weight: normal;
+      font-size: 1.5em;
+    }
+    &-address{
+      line-height: 1.5em;
+    }
+  }
+  &-nav{
+    &-list{
+      margin-top: 30px;
+      display: flex;
+      &-item{
+        margin-right: 30px;
+      }
+    }
+  }
+  &-copy{
+    font-size: .5em;
+    text-align: center;
+    padding: 30px 0;
+  }
+}

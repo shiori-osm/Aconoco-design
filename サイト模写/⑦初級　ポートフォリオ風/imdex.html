@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>初級 ポートフォリオ風サイト</title>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="header-title"><a href=""><img class="header-title-logo" src="img/logo.svg" alt=""></a></h1>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item"><a href="#about">About</a></li>
+          <li class="header-nav-list-item"><a href="#works">Works</a></li>
+          <li class="header-nav-list-item"><a href="#news">News</a></li>
+          <li class="header-nav-list-item"><a href="#contact">Contact</a></li>
+          <li class="header-nav-list-item"><a href=""><img class="header-nav-list-item-insta" src="img/icon-instagram.png" alt=""></a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+    
+  <main class="main">
+    <picture>
+      <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+      <img class="main-img" src="img/mainvisual-pc.jpg" alt="">
+    </picture>
+  </main>
+
+  <div class="container">
+    <section class="about" id="about">
+      <h2 class="contents-title">About</h2>
+      <p class="about-p">Xxxxx Ashley</p>
+      <p>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, 106-0031 Japan</p>
+      <p>tel:000-0000-0000</p>
+      <p class="about-p">mail:xxx@xxxxxx.jp</p>
+      <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </section>
+    
+    <section class="works" id="works">
+      <h2 class="contents-title">Works</h2>
+      <div class="works-flex">
+        <img class="works-flex-img" src="img/works1.jpg" alt="">
+        <img class="works-flex-img" src="img/works2.jpg" alt="">
+        <img class="works-flex-img" src="img/works3.jpg" alt="">
+        <img class="works-flex-img" src="img/works4.jpg" alt="">
+        <img class="works-flex-img" src="img/works5.jpg" alt="">
+        <img class="works-flex-img" src="img/works6.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="news" id="news">
+    <h2 class="contents-title">News</h2>
+      <dl class="news-table">
+        <dt class="news-table-dt">2020.xx.xx</dt>
+        <dd class="news-table-dd">デザイン雑誌「ｘｘｘｘｘ vol.11」に掲載していただきました。</dd>
+        <dt class="news-table-dt">2020.xx.xx</dt>
+        <dd class="news-table-dd">ｘｘ月ｘｘ日から写真集「ｘｘｘｘｘｘ」の販売を開始します。</dd>
+        <dt class="news-table-dt">2019.xx.xx</dt>
+        <dd class="news-table-dd">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        <dt class="news-table-dt">2019.xx.xx</dt>
+        <dd class="news-table-dd">デザイン雑誌「ｘｘｘｘｘ vol.10」に掲載していただきました。</dd>
+        <dt class="news-table-dt">2019.xx.xx</dt>
+        <dd class="news-table-dd">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+      </dl>
+    </section>
+    
+    <section class="contact" id="contact">
+      <h2 class="contents-title">Contact</h2>
+      <form>
+        <div class="contact-flex">
+          <p class="contact-flex-title">NAME</p>
+          <input class="contact-flex-input" type="text" name="name" required> 
+        </div>
+        <div class="contact-flex">
+          <p class="contact-flex-title">E-mail</p>
+          <input class="contact-flex-input" type="text" name="mail" required> 
+        </div>
+      <div class="contact-flex">
+          <p class="contact-flex-title">MESSAGE</p>
+          <textarea class="contact-flex-textarea" name="commit" required></textarea>
+        </div>
+      </form>
+      <div class="contact-btn">
+        <input class="contact-btn-submit" type="submit" value="送信">
+      </div>
+    </section>
+
+  </div>
+    <footer class="footer">
+      <p class="footer-copy">&copy; 2020 My Work</p>
+    </footer>
+  </body>
+  </html>

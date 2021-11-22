@@ -1,0 +1,26 @@
+.container{
+  font-family: 'Kiwi Maru', serif;
+
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #EDBBCF;
+  padding: 50px 0;
+
+  &-question{
+    width: 80%;
+    margin: 0 auto 20px;
+    padding: 30px 0;
+    background-color:#efefef ;
+  }
+  button{
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #db347a;
+    transition: 0.5s;
+  }
+  button:hover{
+    background-color: #efefef;
+  }
+}

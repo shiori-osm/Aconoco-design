@@ -1,0 +1,59 @@
+body{
+  font-family: "Kiwi Maru";
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  // 左上のロゴ
+  &-logo{
+    line-height: 70px;
+    font-size: 2em;
+  }
+  // 三
+  #open-btn{
+    font-size: 2em;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  // クリックしてメニューが開いた時に非表示
+  #open-btn.hide{
+    display: none;
+  }
+  // 開くメニュー
+  &-nav{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    text-align: center;
+    &-list{
+      &-item{
+        padding-top: 10%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // 三クリックしたら開く
+  &-nav.opened{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  // 開くときのアニメーション
+  &-nav{
+    transition: opacity 0.5s;
+  }
+  // ✖
+  #close-btn{
+    position: absolute;
+    top: 18px;
+    right: 50px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+}

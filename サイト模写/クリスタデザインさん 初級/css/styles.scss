@@ -1,0 +1,213 @@
+body{
+  font-family: 'Noto Sans JP',sans-serif;
+}
+img{
+  width: 100%;
+}
+.header{
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 30px 120px;
+  display: flex;
+  justify-content: space-between;
+  &-nav{
+    &-list{
+      display: flex;
+      &-item{
+        margin-left: 30px;
+      }
+    }
+  }
+  .burger-btn{
+    display: none;
+  }
+  &-sp-menu{
+    display: none;
+  }
+}
+
+.fv{
+  height: 90vh;
+  background-image: url(../img/fv-bgi@2x.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-text{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    padding: 32px 45px;
+    border: 1px solid #fff;
+  }
+}
+
+.inner{
+  width: 80%;
+  margin: auto;
+}
+.section{
+  padding-bottom: 150px;
+  &-title{
+    &-en{
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    &-ja{
+      font-weight: bold;
+      line-height: 2em;
+      padding-bottom: 42px;
+    }
+  }
+  &-text{
+    line-height: 1.2em;
+  }
+}
+.about{
+  padding-top: 100px;
+  &-title{
+    padding-bottom:72px ;
+  }
+}
+.service{
+  &-flex{
+    padding: 50px 0 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-img{
+      width: 50%;
+    }
+    &-text{
+      width: 45%;
+    }
+  }
+}
+
+.news{
+  &-flex{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    &-card{
+      width: 31%;
+      border: 1px solid #eee;
+      box-shadow: 0 0 6px;
+      &-text{
+        padding: 25px 32px 25px 34px;
+      }
+    }
+  }
+}
+
+.contact{
+  width: 60%;
+  margin: auto;
+  &-title{
+    text-align: center;
+    padding-bottom: 70px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  &-table{
+    input{
+      width: 100%;
+      margin: 3px 0 22px 0 ;
+    }
+    textarea{
+      margin: 3px 0 50px 0;
+      width: 100%;
+    }
+  }
+  &-btn{
+    display: block;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 16px 97px;
+  }
+}
+
+.footer{
+  margin-top: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .header{
+    padding: 30px 15px;
+    &-pc-menu{
+      display: none;
+    }
+    .burger-btn{
+      display: block;
+      width: 25px;
+    }
+    &-sp-menu{
+      z-index: 2;
+      width: 100%;
+      display: block;
+      position: absolute;
+      background-color: pink;
+      margin: 0;
+      opacity: 0;
+    }
+    &-nav{
+      height: 100vh;
+      &-list{
+        flex-direction: column;
+      }
+    }
+    &-sp-menu.show{
+      opacity: 1;
+    }
+   
+  }
+
+  .fv{
+    background-image: url(../img/fv-bgi_sp@2x.jpg);
+    background-size: cover;
+  }
+  .inner{
+    width: 90%;
+  }
+  
+  .service{
+    &-flex{
+      flex-direction: column;
+      &-reverce{
+        flex-direction: column-reverse;
+      }
+      &-img{
+        width: 100%;
+        padding-top: 40px;
+      }
+      &-text{
+        width: 100%;
+      }
+    }
+  }
+  .news{
+    &-flex{
+      flex-direction: column;
+      &-card{
+        width: 90%;
+        margin: auto;
+      }
+      &-card:not(:last-child){
+        margin-bottom:50px ;
+      }
+    }
+  }
+  .contact{
+    width: 100%;
+
+  }
+
+
+}

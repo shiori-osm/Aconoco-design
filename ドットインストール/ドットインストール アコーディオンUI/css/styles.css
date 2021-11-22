@@ -1,0 +1,76 @@
+body{
+  padding: 5px;
+}
+h1{
+  font-size: 20px;
+  border-bottom: 1px solid #333;
+  padding: 20px 40px ;
+}
+
+dl > div{
+  padding: 8px;
+}
+dt{
+  padding: 16px 0;
+  cursor: pointer;
+  /* 連打するとテキストが青く選択されちゃうのでキャンセル＝user-select */
+  user-select: none;
+  /* +マークを右端に寄せたいのでrelative指定 */
+  position: relative;
+  transition: all 0.5s;
+}
+dt::before{
+  content: "Q. ";
+}
+dt::after{
+  content: "+";
+  /* +マークを右端に寄せたいのでabsolute指定 */
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  /* アニメーションさせたいので */
+  transition: transform 0.5s;
+}
+dt:hover{
+  background-color: #efefef;
+}
+dd{
+  padding: 8px 0;
+  display: none;
+}
+dd::before{
+  content: "A. ";
+}
+
+/* 以下JSでつけたクラス */
+/* dl直下のdivタグにappearクラスがついたら、ddタグがdisplay block  */
+dl > div.appear dd{
+  display: block;
+}
+/* dl直下のdivタグにappearクラスがついたら、dt::afterを45度回転させて✖に見えるようにする */
+dl > div.appear dt::after{
+  transform: rotate(45deg);
+}
+
+/* 以下animation */
+dt::after{
+  transition: transform 0.5s; /* 45度回転を少しゆっくりに */
+}
+/* dl直下のdivタグにappearクラスがついたら、ddタグがdisplay block  */
+/* ddの内容は最初消えてるのでtransitionは使えない＝keyframsを使う */
+dl > div.appear dd{
+  display: block;
+  animation: 0.3s fadeIn; /* fadeInを0.3sかけて実行 */
+}
+@keyframes fadeIn{
+  /* 最初は消えた状態＋少し上のほうに配置 */
+  0%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  /* 100％の時は出現＋元の位置に戻る */
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}

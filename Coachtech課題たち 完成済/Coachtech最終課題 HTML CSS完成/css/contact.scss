@@ -1,0 +1,363 @@
+body{
+  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif JP', serif;
+}
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+.inner60{
+  width: 60%;
+  margin: auto;
+}
+$color-222:#222;
+$color-yellow:#FFD200;
+$color-navy:#324556;
+$color-white:#fff;
+$color-blue:#00859B;
+$color-lightblue:#ABC5D6;
+$color-gray:rgba($color:#00859B,$alpha:0.1);
+
+.section-title{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  &-main{
+    padding-top: 60px;
+    font-size: 2em;
+    color: $color-blue;
+    margin-bottom: 2%;
+  }
+  &-sub{
+    font-size: 1.2em;
+    margin-bottom: 2%;
+  }
+}
+
+.header{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba($color: $color-white, $alpha: 0.8);
+  &-logo{
+    width: 150px;
+    margin-left: 30px;
+  }
+  &-nav{
+    &-list{
+      display: flex;
+      &-item{
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+// 大サイズ header-sp非表示
+.header-sp{
+  display: none;
+}
+
+form {
+  max-width:420px;
+  margin:50px auto;
+}
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid $color-blue;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+  border:2px solid $color-gray;
+}
+
+textarea{
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:$color-blue;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:$color-lightblue; }
+
+.footer{
+  background-color: #efefef;
+  &-company{
+    padding-top:60px ;
+    width: 20%;
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+  }
+  &-nav{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    &-list{
+      line-height: 2em;
+      &-item{
+        margin-bottom: 10px;
+      }
+    }
+    &-list:last-child{
+      margin-left: 25%;
+    }
+    &-table{
+      display: flex;
+      flex-wrap: wrap;
+      width: 65%;
+      &-dt{
+        margin-bottom: 35px;
+        font-weight: bold;
+        width: 20%;
+      }
+      &-dd{
+        width: 80%;
+      }
+    }
+  }
+  .-item{
+    margin-left: 15px;
+  }
+  &-copy{
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header{
+    display: none;
+  }
+  .header-sp{
+    display: block;
+    height: 60px;
+    display: flex;
+    &-title{
+      margin-top: 3%;
+      width: 150px;
+    }
+      &-menu{   //三 3本線
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        &-line{
+          &-top, &-middle, &-bottom {
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: #222;
+            position: absolute;
+            transition: 0.5s;
+          }
+        }
+        &-line{ //3本線➀
+          &-top {
+            top: 0;
+          }
+          &-middle { //3本線②
+            top: 12px;
+          }
+          &-bottom {  //3本線③
+            top: 24px;
+          }
+        }
+      }//.header-sp-menu
+
+      &-nav{
+        z-index: 1;
+        position:absolute;
+        height: 150vh;
+        width: 100%;
+        left: -100%;
+        transition: 0.7s;
+        background-color: #fff;
+        opacity: 0.9;
+        text-align: center;
+        &-list{
+          color: #222;
+          font-weight: bold;
+          &-item{
+            margin-top: 100px;
+            margin-bottom: 30px;
+          }
+        }
+      }//.header-sp-nav
+
+      //以下JSでつけたクラス
+    .open span:nth-of-type(1) {
+      top: 14px;
+      transform: rotate(45deg);
+    }
+    .open span:nth-of-type(2) {
+      opacity: 0;
+    }
+    .open span:nth-of-type(3) {
+      top: 14px;
+      transform: rotate(-45deg);
+    }
+    .slide{
+      transform: translateX(100%);
+    }
+  }//.header-sp
+
+  .section-title{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    &-en{
+      font-size: 2em;
+      color: $color-blue;
+    }
+    &-ja{
+      padding: 15px;
+    }
+  }
+
+  .section-btn:first-child{
+    margin-bottom: 2%;
+  }
+
+  .inner{
+    width: 90%;
+    margin: auto;
+  }
+  .inner60{
+    width: 80%;
+    margin: auto;
+  }
+
+
+  .footer{
+    &-company{
+      width: 80%;
+    }
+    &-nav{
+      flex-direction: column;
+      &-list{
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        &-item:not(:last-child){
+          margin-right: 5%;
+
+        }
+      }
+      &-table{
+        width: 100%;
+        &-dt{
+          width: 30%;
+        }
+        &-dd{
+          width: 70%;
+        }
+      }
+    }
+  }
+
+}//@media768px
+
+@media screen and (max-width: 375px) {
+  .section-title{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    &-ja{
+      padding-bottom: 5%;
+    }
+  }
+  .section-btn{
+    width: 180px;
+  }
+  .header-sp{
+    &-title{
+      margin-top: 7%;
+    }
+  }
+  .footer{
+    &-company{
+      width: 100%;
+    }
+    &-nav{
+      &-list{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &-table{
+        line-height: 1.2em;
+        width: 100%;
+        &-dt{
+          width: 100%;
+          margin-bottom: 2%;
+        }
+        &-dd{
+          width: 100%;
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+}//@media375px
+
+
+// アニメーション用CSS
+.fade-in {
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.fade-in-down {
+  transform: translate(0, -50px);
+}
+
+.fade-in-left {
+  transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+  transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}

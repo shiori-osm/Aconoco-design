@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>クリスタデザインさん初級</title>
+</head>
+<body>
+  <!-- header  -->
+  <header class="header">
+    <h1 class="header-title"><a href="">クリ★スタ</a></h1>
+    <div class="header-pc-menu">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item"><a href="">About</a></li>
+          <li class="header-nav-list-item"><a href="">Service</a></li>
+          <li class="header-nav-list-item"><a href="">Contents</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button class="burger-btn" id="button">
+      <span>
+        <span class="burger-btn-top"></span>
+        <span class="burger-btn-mid"></span>
+        <span class="burger-btn-bottom"></span>
+      </span>
+    </button>
+    <div class="header-sp-menu" id="nav">
+      <nav class="header-nav" >
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item"><a href="">About</a></li>
+          <li class="header-nav-list-item"><a href="">Service</a></li>
+          <li class="header-nav-list-item"><a href="">Contents</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ファーストビュー -->
+    <section class="fv">
+      <p class="fv-text">Cresta Design.</p>
+    </section>
+
+    <div class="inner">
+      <!-- about -->
+      <section class="section about">
+        <div class="section-title">
+          <h2 class="section-title-en about-title">About</h2>
+          <p class="section-title-ja">ミニマルで<br>洗練されたデザインを。</p>
+        </div>
+        <p class="section-text">近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+      </section>
+    
+      <!-- service  -->
+      <section class="section service">
+        <div class="section-title">
+          <h2 class="section-title-en">Service</h2>
+        </div>
+        <div class="service-flex service-flex-reverce">
+          <img class="service-flex-img" src="img/service-image02@2x.jpg" alt="">
+          <div class=" service-flex-text service-flex-reverce">
+            <p class="section-title-ja">リリース時のサポートで
+            サービスのブランディングを</p>
+            <p class="section-text">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+          </div>
+        </div>
+        <div class="service-flex">
+          <div class="service-flex-text">
+            <p class="section-title-ja">リリース時のサポートで
+            サービスのブランディングを</p>
+            <p class="section-text">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+          </div>
+          <img class="service-flex-img" src="img/service-image@2x.jpg" alt="">
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="section news">
+        <h2 class="section-title-en">News</h2>
+        <div class="news-flex">
+          <div class="news-flex-card">
+            <img src="img/card-image1@2x.jpg" alt="">
+            <p class="section-text news-flex-card-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+          <div class="news-flex-card">
+            <img src="img/card-image2@2x.jpg" alt="">
+            <p class="section-text news-flex-card-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+          <div class="news-flex-card">
+            <img src="img/card-image3@2x.jpg" alt="">
+            <p class="section-text news-flex-card-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- お問い合わせ -->
+      <section class="contact">
+        <h2 class="contact-title">お問い合わせ</h2>
+        <form class="contact-table">
+          <p>担当者名</p>
+          <input type="text">
+          <p>電話番号</p>
+          <input type="text">
+          <p>メールアドレス</p>
+          <input type="text">
+          <p>お問い合わせ内容</p>
+          <textarea name="" id=""  rows="10"></textarea>
+          <input class="contact-btn" type="submit" value="送信">
+        </form>
+      </section>
+    </div><!-- inner  -->
+  </main>
+
+  <!-- footer  -->
+  <footer class="footer"><small>&copy;crest.design all rights reserved</small></footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

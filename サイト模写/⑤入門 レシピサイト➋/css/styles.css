@@ -1,0 +1,118 @@
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", "sans-serif";
+}
+
+.contents-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.main-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-flex-img {
+  width: 50%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+.main-flex-sections {
+  width: 50%;
+  padding: 40px 5% 0 5%;
+}
+.main-flex-sections-main-title {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.main-flex-sections-main-desc {
+  margin-bottom: 30px;
+}
+.main-flex-sections-ing {
+  padding-bottom: 30px;
+}
+.main-flex-sections-ing-dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1.8em;
+}
+.main-flex-sections-ing-dt {
+  width: 85%;
+  border-bottom: 1px solid #ddd;
+}
+.main-flex-sections-ing-dd {
+  width: 15%;
+  border-bottom: 1px solid #ddd;
+}
+.main-flex-sections-howto {
+  margin-bottom: 60px;
+}
+.main-flex-sections-howto-list {
+  margin-left: 20px;
+  line-height: 1.8em;
+}
+.main-flex-sections-howto-list-item {
+  border-bottom: 1px solid #ddd;
+}
+.main-link {
+  text-align: center;
+}
+.main-link-a {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 20px 60px;
+  text-decoration: none;
+  margin: auto;
+}
+
+.footer {
+  padding: 60px 15px;
+  text-align: center;
+}
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-list-item {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 834px) {
+  .main-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-flex-img {
+    width: 100%;
+    height: auto;
+  }
+  .main-flex-sections {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

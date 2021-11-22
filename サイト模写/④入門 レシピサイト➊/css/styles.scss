@@ -1,0 +1,63 @@
+body{
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", "sans-serif";
+}
+img{
+  width: 100%;
+}
+a{
+  color: inherit;
+}
+.main{
+  height: 100vh;
+}
+.diary{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 60px 0;
+  &-title{
+    font-size:2em ;
+    margin-bottom: 20px;
+  }
+  &-desc{
+    line-height: 1.5em;
+  }
+}
+.images{
+  &-flex{
+    display: flex;
+    &-img{
+      height: 500px;
+      width:calc(100% / 3);
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+  }
+  &-link{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 150px;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 60px auto;
+  }
+}
+
+.footer{
+  text-align: center;
+  &-copy{
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .images{
+    &-flex{
+      flex-direction: column;
+      &-img{
+        width: 100%;
+      }
+    }
+  }
+}

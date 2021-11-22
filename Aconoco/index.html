@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- css  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- material-icon  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- title  -->
+  <title>Aconoco ホームページ</title>
+</head>
+<body>
+
+  <!-- loading  -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  
+  <!-- header  -->
+  <header class="header">
+    <h1 class="header-logo"><a href="index.html">Aconoco</a></h1>
+    <span class="material-icons" id="open-btn">menu</span>
+    <nav class="header-nav" id="open-menu">
+      <span class="material-icons" id="close-btn">close</span>
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item"><a href="#about">ABOUT</a></li>
+        <li class="header-nav-list-item"><a href="service.html">SERVICE</a></li>
+        <li class="header-nav-list-item"><a href="works.html">WORKS</a></li>
+        <li class="header-nav-list-item"><a href="contact.html">CONTACT</a></li>
+        <li class="header-nav-list-item"><a href="#company">COMPANY</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- firstview  -->
+    <section class="fv">
+      <h2 class="fv-main font-animation">三重県のなんでも屋さん</h2>
+      <img class="fv-logo" src="img/Aconoco-logo.png" alt="">
+      <ul class="fv-flex">
+        <li class="fv-flex-list"><img src="img/icon1.png" alt=""></li>
+        <li class="fv-flex-list"><img src="img/icon2.png" alt=""></li>
+        <li class="fv-flex-list"><img src="img/icon3.png" alt=""></li>
+        <li class="fv-flex-list"><img src="img/icon4.png" alt=""></li>
+        <li class="fv-flex-list"><img src="img/icon5.png" alt=""></li>
+      </ul>
+    </section>
+
+    <!-- about  -->
+    <section class="about" id="about">
+      <div class="section-title about-title">
+        <h2 class="section-title-ja font-animation">Aconocoってなあに??</h2>
+        <p class="section-title-en">About Aconoco</p>
+      </div>
+      <div class="about-text">
+        <p>2022年3月にできた、三重県の会社です。</p>
+        <p>Webサイトの制作・アプリケーションの開発から<br>
+          困っている方のお手伝いなどを承る、<br>
+          「なんでも屋さん」です。</p>
+        <p class="about-text-large">「地域の活性化」「地域に寄り添う」を目標に<br>さまざまなことに取り組みます。</p>
+      </div>
+    </section>
+
+    <!-- service  -->
+    <section class="service">
+      <div class="section-title">
+        <h2 class="section-title-ja font-animation">Aconocoにできること</h2>
+        <p class="section-title-en">OUR SERVICE</p>
+      </div>
+      <div class="service-flex">
+        <div class="service-flex-cats animation-target">
+          <img src="img/cat-tuna.png" alt="">
+          <img class="rang" src="img/cat-rang.png" alt="">
+        </div>
+        <div class="service-flex-info">
+          <h3 class="service-flex-info-title"><span>得意なこと</span></h3>
+          <ul class="service-flex-info-list">
+            <li>ホームページのデザイン、制作</li>
+            <li>サーバーの立ち上げ</li>
+          </ul>
+          <h3 class="service-flex-info-title"><span>以下のようなこともご相談ください</span></h3>
+          <ul class="service-flex-info-list">
+            <li>お洗濯のお手伝い</li>
+            <li>お料理やお菓子作りのお手伝い</li>
+            <li>動画制作・編集のお手伝い</li>
+            <li>その他</li>
+          </ul>
+        </div>
+      </div>
+      <!-- service-text -->
+      <div class="service-text">
+        <p>わたしたちに出来ることで<br>皆様のお役にたてたら嬉しく思います。</p>
+        <p class="service-text-large">
+          <span>「こんなことは出来る??」</span>
+          <span>「こんな悩みがあるんだけど…」</span></p>
+        <p>ぜひ、ご相談ください。</p>
+        <a href="contact.html" class="btn">相談してみる</a>
+      </div>
+    </section>
+
+    <!-- price  -->
+    <section class="price">
+      <div class="section-title">
+        <h2 class="section-title-ja font-animation">気になるお値段</h2>
+        <p class="section-title-en">PRICE</p>
+      </div>
+      <div class="price-flex">
+        <!-- price web制作  -->
+        <div class="price-flex-container animation-target">
+          <div class="price-flex-container-title">
+            <img src="img/icon1.png" alt="">
+            <h3>Webサイトの制作</h3>
+            <p>5万円～要相談</p>
+          </div>
+          <p>デザインからコーディングまで、幅広く承ります。<br>
+          HTML・CSS・JavaScript・jQueryを使用したおしゃれなWebサイト、WordPressを使用したページ等も制作が可能です。</p>
+          <p class="price-flex-container-text">お見積もりは無料です。<br>
+          お気軽にお問い合わせください。</p>
+        </div>
+        <!-- Price アプリケーション開発 -->
+        <div class="price-flex-container animation-target">
+          <div class="price-flex-container-title">
+            <img src="img/icon2.png" alt="">
+            <h3>Webアプリ開発</h3>
+            <p>50万円～要相談</p>
+          </div>
+          <p>多種多様な機能を備えたアプリ開発が可能です。<br>
+          機能実装を実現するだけでなくスマートデバイスの専門家として、各端末・各OSでのユーザビリティ、操作性を意識した開発を心がけます。</p>
+          <p class="price-flex-container-text">お見積もりは無料です。
+          お気軽にお問い合わせください。</p>
+        </div>
+      </div>
+      <div class="section-btn">
+        <a href="service.html" class="btn">くわしくみる</a>
+      </div>
+    </section>
+
+    <!-- others -->
+    <section class="others">
+      <div class="section-title">
+        <h2 class="section-title-ja font-animation">その他 / ご相談下さい</h2>
+        <p class="section-title-en">OTHERS</p>
+      </div>
+      <div class="others-flex">
+        <!-- container1 -->
+        <div class="others-flex-container animation-target">
+          <div class="others-flex-container-title">
+            <img src="img/others-washing.png" alt="">
+            <h3>お洗濯のお手伝い</h3>
+          </div>
+          <p class="others-flex-container-text">普段着のお洗濯、面倒な畳む作業も承ります。<br>
+          重たいお布団や汚れのついてしまったカーペット、なんでもござれ。
+          <br>
+          目的、イベント、ご気分に合わせた柔軟剤・香りのご提案も致します。</p>
+        </div>
+        <!-- container2 -->
+        <div class="others-flex-container animation-target">
+          <div class="others-flex-container-title">
+            <img src="img/others-bake.png" alt="">
+            <h3>お菓子作りのお手伝い</h3>
+          </div>
+          <p class="others-flex-container-text">
+            お菓子作りが得意なスタッフが在籍しています。<br>
+            イベント用のお菓子はもちろん、糖質制限中の方や減量中の方、グルテンフリー、ケトジェニック、パレオなど様々な食生活に合わせたお菓子作りが可能です。<br><br>※焼き菓子がメインとなります
+          </p>
+        </div>
+        <!-- container3 -->
+        <div class="others-flex-container animation-target">
+          <div class="others-flex-container-title">
+            <img src="img/others-cook.png" alt=""><img src="img/others-fitness.png" alt="">
+            <h3>お料理のお手伝い</h3>
+          </div>
+          <p class="others-flex-container-text">お料理が得意なスタッフが在籍しています。<br>
+          イベント用のお料理はもちろん家庭的なメニュー、節約メニュー、いろんなお料理のお手伝いを致します。<br>
+          <br>
+          トレーニング経験のあるスタッフもおり、PFCバランスにこだわったメニューや、筋肉に優しいメニューなど、幅広くご提案できます。</p>
+        </div>
+      </div>
+      <div class="others-flex">
+        <!-- container4 -->
+          <div class="others-flex-container animation-target">
+            <div class="others-flex-container-title">
+              <img src="img/icon3.png" alt="">
+              <h3>動画制作のお手伝い</h3>
+            </div>
+            <p class="others-flex-container-text">結婚式に向けたビデオレターの制作、個人様向けのホームビデオの制作、
+            企業様向けの動画制作等も承ります。
+            </p>
+          </div>
+          <!-- container5 -->
+          <div class="others-flex-container last-box animation-target">
+            <div class="others-flex-container-title">
+              <img src="img/icon5.png" alt="">
+            </div>
+            <p class="others-flex-container-text">
+              <p>地域の方のお役に立ちたく<br>いろんなサービスを模索中です！</p>
+              <span class="last-box-span">「こんなことは出来る??」</span>
+              <span class="last-box-span">「こういう悩みがあるんだけど…」</span>
+              <p class="others-flex-container-text-line">ぜひご相談ください。</p>
+            </p>
+          </div>
+        </div>
+      <div class="section-btn">
+        <a href="contact.html" class="btn">相談してみる</a>
+      </div>
+    </section>
+
+    <!-- works  -->
+    <section class="works">
+      <div class="section-title">
+        <h2 class="section-title-ja font-animation">わたしたちの実績をご紹介</h2>
+        <p class="section-title-en">WORKS</p>
+      </div>
+      <div class="works-flex">
+        <!-- work-1  -->
+        <div class="works-flex-container animation-target">
+          <div class="works-flex-container-img">
+            <img src="img/works-1.png" alt="">
+          </div>
+          <p>2021/09</p>
+          <p>企業様よりサーバー立ち上げのご依頼をいただきました</p>
+        </div>
+        <!-- work-2  -->
+        <div class="works-flex-container animation-target">
+          <div class="works-flex-container-img">
+            <img src="img/works-2.png" alt="">
+          </div>
+          <p>2021/10</p>
+          <p>飲食店様よりホームページ制作のご依頼をいただきました</p>
+        </div>
+        <!-- work-3  -->
+        <div class="works-flex-container animation-target">
+          <div class="works-flex-container-img">
+            <img src="img/works-1.png" alt="">
+          </div>
+          <p>2021/11</p>
+          <p>企業様よりアプリケーション開発のご依頼をいただきました</p>
+        </div>
+      </div>
+      <div class="section-btn">
+        <a href="works.html" class="btn">くわしくみる</a>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section class="contact">
+      <a href="contact.html" class="contact-link animation-target">
+        <div class="section-title">
+          <h2 class="section-title-ja font-animation">ご相談・お問い合わせ</h2>
+          <p class="section-title-en white">CONTACT</p>
+        </div>
+        <img src="img/contact-mail.png" alt="">
+        <p>お問い合わせはこちらから。<br>
+          お気軽にお問い合わせくださいませ。</p>
+      </a>
+    </section>
+    
+    <!-- company  -->
+    <section class="company" id="company">
+      <div class="section-title">
+        <h2 class="section-title-ja">会社概要</h2>
+        <p class="section-title-en">COMPANY</p>
+      </div>
+      <dl class="company-table">
+        <dt>社名</dt>
+        <dd>合同会社 Aconoco</dd>
+        <dt>本社</dt>
+        <dd>三重県四日市市</dd>
+        <dt>代表者</dt>
+        <dd>代表社員(CEO)　内山志栞</dd>
+        <dt>設立</dt>
+        <dd>2022年3月</dd>
+        <dt>事業内容</dt>
+        <dd>web制作・開発事業 / お手伝い事業</dd>
+      </dl>
+      <iframe class="company-map animation-target"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104573.92057571338!2d136.59111254871684!3d35.00833175728743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600392853152b2a5%3A0xdeff06ba7db83931!2z5LiJ6YeN55yM5Zub5pel5biC5biC!5e0!3m2!1sja!2sjp!4v1637300727755!5m2!1sja!2sjp"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-list-item"><a href="index.html">HOME</a></li>
+        <li class="footer-nav-list-item"><a href="#about">ABOUT</a></li>
+        <li class="footer-nav-list-item"><a href="service.html">SERVICE</a></li>
+        <li class="footer-nav-list-item"><a href="works.html">WORKS</a></li>
+        <li class="footer-nav-list-item"><a href="contact.html">CONTACT</a></li>
+        <li class="footer-nav-list-item"><a href="#company">COMPANY</a></li>
+      </ul>
+      <ul class="footer-nav-link">
+        <li class="footer-nav-link-item"><a href=""><img src="img/facebook-logo.png" alt=""></a></li>
+        <li class="footer-nav-link-item"><a href=""><img src="img/instagram-logo.png" alt=""></a></li>
+      </ul>
+    </nav>
+    <small>©copyright Aconoco. All rights Reserved.</small>
+  </footer>
+  
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

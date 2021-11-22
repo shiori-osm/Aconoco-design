@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック";
+  color: #232323;
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+.inner {
+  width: 80%;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.main {
+  height: 100vh;
+  background-image: url(../img/serviceトップ.png);
+  background-size: cover;
+}
+
+.main-fv {
+  line-height: 1.5em;
+  padding: 50px 100px;
+  background-color: rgba(171, 197, 214, 0.8);
+  border-radius: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.header {
+  position: relative;
+  padding-top: 30px;
+  justify-content: space-between;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  margin-left: 30px;
+  width: 100px;
+}
+
+.header-title-logo {
+  border-radius: 10px;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-list-item {
+  margin-right: 30px;
+}
+
+.counseling {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.counseling-school {
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.counseling-sub {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.counseling-btn {
+  display: inline-block;
+  background-color: #FFD200;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+.footer {
+  width: 70%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-flex-title {
+  border-bottom: 1px solid #232323;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.footer-flex-address {
+  line-height: 1.5em;
+}
+
+.footer-nav-list {
+  margin-top: 30px;
+  display: flex;
+}
+
+.footer-nav-list-item {
+  margin-right: 30px;
+}
+
+.footer-copy {
+  font-size: .5em;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.dates {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.dates-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dates-flex-container {
+  width: 30%;
+  padding: 3%;
+  background-color: #ABC5D6;
+}
+
+.dates-flex-container-title {
+  text-align: center;
+}
+
+.dates-flex-container-title-n {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.dates-flex-container-title-main {
+  margin-bottom: 15px;
+}
+
+.dates-flex-container-title-l {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4C5C6B;
+}
+
+.dates-flex-container:not(:last-child) {
+  margin-right: 2%;
+}
+
+.feature {
+  padding: 60px 0;
+}
+
+.feature-container {
+  text-align: center;
+  background-color: #fff;
+}
+
+.feature-container-desc {
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.2em;
+}
+
+.stagee {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.stagee-ex {
+  text-align: center;
+  background-color: #ABC5D6;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 5% 0;
+}
+
+.stagee-ex-desc {
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+
+.stagee-ex-desc-link {
+  display: inline-block;
+}
+
+.stagee-ex-desc-soon {
+  margin-top: 30px;
+}

@@ -1,0 +1,56 @@
+body {
+  font-family: "Kiwi Maru";
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+.header-logo {
+  line-height: 70px;
+  font-size: 2em;
+}
+.header #open-btn {
+  font-size: 2em;
+  line-height: 70px;
+  cursor: pointer;
+}
+.header #open-btn.hide {
+  display: none;
+}
+.header-nav {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.header-nav-list-item {
+  padding-top: 10%;
+  margin-bottom: 30px;
+}
+.header-nav.opened {
+  opacity: 1;
+  pointer-events: auto;
+}
+.header-nav {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.header #close-btn {
+  position: absolute;
+  top: 18px;
+  right: 50px;
+  font-size: 2em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,176 @@
+body{
+  font-family: 'Noto Serif JP', serif;
+  color:#402114;
+}
+img{
+  width: 100%;
+}
+
+$color-tonoko:#F4DDA5;
+$color-sango:#EF8468;
+$color-text:#402114;
+
+/* 桜を表示するコンテナのスタイル */
+.cherry-blossom-container {
+  position: relative;
+  height: 100vh; /* コンテナの高さ */
+  width: 100%; /* コンテナの横幅 */
+  overflow: hidden; /* コンテナからはみ出した要素を隠す */
+}
+
+/* 桜の花びらのスタイル */
+.petal {
+  position: absolute;
+  background-color: #FAD5E7; /* 花びらの色 */
+  border-radius: 150% 0 150% 0;
+  animation: animate-petal 10s linear;
+}
+
+.petal::after {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: -10%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color:#EF8468 , $alpha: 0.5);
+  border-radius: 150% 0 150% 0;
+  transform: rotate(15deg);
+}
+
+/* 花びらが降るアニメーション */
+@keyframes animate-petal {
+  0% {
+    top: 0;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+    transform: rotate(3000deg);
+  }
+}
+
+.section-title{
+  color: $color-sango;
+  text-align: center;
+  &-en{
+    font-size: 2em;
+    margin-bottom: 1%;
+    margin-top: 60px;
+  }
+  &-ja{
+    margin-bottom: 5%;
+  }
+}
+.inner{
+  width: 80%;
+  margin: auto;
+}
+
+.fv{
+  height: 100vh;
+  background-image: url(../img/1.png);
+  background-size: cover;
+  &-flex{
+    display: flex;
+    align-items: center;
+    &-header{
+      &-img{
+        width: 30%;
+        margin: 50px 0 30px 15%;
+      }
+      width: 40%;
+      height: 100vh;
+      background-color: rgba($color: #F4DDA5, $alpha: 0.8);
+      &-nav{
+        margin-left: 15%;
+        &-list{
+          font-size: 1.5em;
+          &-item{
+            font-weight: bolder;
+            margin-bottom: 30px;
+          }
+          .small{
+            font-weight: normal;
+            font-size: 0.7em;
+            margin-left: 30px;
+          }
+        }
+        &-reserve{
+          display: inline-block;
+          background-color: $color-sango;
+          padding: 3%;
+          border-radius: 10px;
+        }
+        &-sns{
+          display: flex;
+          &-link{
+            width: 40px;
+            margin-top: 30px;
+          }
+          .fb{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    &-catch{
+      width: 60%;
+      color: #fff;
+      text-shadow: #EF8468 3px 0 40px;
+      font-size: 2.5em;
+      width: 40%;
+      margin: auto;
+    }
+  }
+}
+
+.greetings{
+  background-image: url(../img/bg1.png);
+  background-size: cover;
+  padding-bottom: 5%;
+  &-flex{
+    display: flex;
+    &-left{
+      width: 50%;
+      &-text{
+        text-align: center;
+        line-height: 1.5em;
+        &-bold{
+          margin-top: 5%;
+          line-height: 1.5em;
+          font-weight: bold;
+          font-size: 1.3em;
+        }
+      }
+    }
+    &-right{
+      &-img{
+        width: 80%;
+      }
+      padding-top: 60px;
+      &-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-img{
+          width: 20%;
+          margin: 2% 5% 0 5%;
+        }
+        &-name{
+          width: 70%;
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+}

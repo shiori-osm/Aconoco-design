@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <!-- /.header-contents -->
+<header>
+  <div class="header-contents">
+    <h1>FizzBuzzのゲーム</h1>
+    <h2>30までの数でFizzBuzz</h2>
+  </div>
+</header>
+
+<!-- /.main-wrapper -->
+<div class="main-wrapper">
+  <section>
+    
+  </section>
+</div>
+
+<!-- footer  -->
+<footer>JavaScript Samples</footer>
+
+<!-- JavaScript -->
+<script>
+  'use strict';
+  //fizzbuzzという関数にnumというパラメータ―値を渡して、
+  function fizzbuzz(num){
+    // 3でも5でも割り切れる場合はFizzBuz‼をリターンとしてかえす
+    if(num % 3 === 0 && num % 5 === 0){
+      return 'FizzBuzz!!'
+    //それ以外で、3で割り切れる場合はFizz!!をリターンとして返す
+    } else if (num % 3 === 0){
+      return 'Fizz!!'
+    // それ以外で5で割り切れる場合はBuzz!!をリターンとして返す
+    } else if (num % 5 === 0){
+      return 'Buzz!!'
+    //それ以外(３でも５でも割り切れない場合)は数値をそのままリターンとして返す
+    } else {
+      return num;
+    }
+  }
+
+  // iを1と定義して
+  let i = 1;
+  // iが30以下の間
+  while(i <= 30){
+    // function fizzbuzz(num)を表示してね
+    console.log(fizzbuzz(i));
+    // iは1ずつ増えるよ
+    i += 1;
+  }
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+.in {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-title {
+  width: 180px;
+  margin: 60px 0 15px 0;
+}
+.header-link {
+  display: block;
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+.index {
+  padding: 60px;
+  margin-bottom: 60px;
+  background-color: #F5F5F5;
+}
+.index-inner {
+  padding: 30px;
+  border: 1px solid #000;
+}
+.index-list {
+  display: table;
+  margin: 0 auto;
+}
+.index-list-item {
+  line-height: 2em;
+}
+
+.images {
+  margin-bottom: 60px;
+}
+.images-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.images-flex-img {
+  width: 49%;
+  margin-bottom: 2%;
+}
+.images-flex-img:nth-child(2n) {
+  margin-right: 0;
+}
+
+.detail {
+  background-color: #F5F5F5;
+  padding: 60px;
+  margin-bottom: 60px;
+}
+.detail-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.detail-flex-table {
+  width: 35%;
+  border-right: 1px solid #000;
+}
+.detail-flex-table-dt {
+  font-weight: bold;
+}
+.detail-flex-table-dd {
+  margin-bottom: 10px;
+}
+.detail-flex-desc {
+  width: 60%;
+  margin-left: 5%;
+}
+.detail-flex-desc-item {
+  margin-bottom: 20px;
+}
+.detail-flex-desc-link {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.footer {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    max-width: 90%;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .images-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .images-flex-img {
+    width: 100%;
+  }
+
+  .detail-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detail-flex-table {
+    border-right: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+  }
+  .detail-flex-table-dd:last-child {
+    margin-bottom: 5%;
+  }
+  .detail-flex-desc {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

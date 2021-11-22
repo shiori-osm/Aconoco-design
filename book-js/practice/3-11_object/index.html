@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <!-- /.header-contents -->
+<header>
+  <div class="header-contents">
+    <h1>アイテムの価格と在庫を表示する</h1>
+    <h2>HTMLに出力する</h2>
+  </div>
+</header>
+
+<!-- /.main-wrapper -->
+<div class="main-wrapper">
+  <section>
+    
+  </section>
+</div>
+
+<!-- footer  -->
+<footer>JavaScript Samples</footer>
+
+<!-- JavaScript -->
+<script>
+  'use strict';
+
+  // let jsbook = {title: 'JavaScript入門', price : 2500, stock : 3};
+  // console.log(jsbook);
+  // console.log(jsbook.title);
+
+  // jsbook.stock = 10;
+  // console.log(jsbook.price)
+  // console.log(jsbook.stock)
+
+  let jsbook = {title:'JavaScript入門',price:2500,stock:10};
+  
+  for (let p in jsbook){
+    console.log(p + ' =' + jsbook[p]);
+  }
+
+</script>
+</body>
+</html>

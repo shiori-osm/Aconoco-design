@@ -1,0 +1,296 @@
+body{
+  font-family: "游ゴシック";
+  color: #232323;
+  background-color: #f2f2f2;
+}
+img{
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a{
+  color: inherit;
+}
+.inner{
+  width: 80%;
+  margin: auto;
+}
+
+.section-title{
+  &-main{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+  &-sub{
+    margin-bottom: 15px;
+  }
+  &-en{
+    font-size:2em;
+    font-weight: normal;
+  }
+  &-ja{
+    border-bottom: 1px solid #232323 ;
+    width: 100px;
+    padding: 15px 0;
+  }
+  &-p{
+    padding: 15px 0 30px 0;
+  }
+}
+
+
+.header{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  &-title{
+    margin-left: 30px;
+    width: 100px;
+    &-logo{
+      border-radius: 10px;
+
+    }
+    }
+  &-nav{
+    &-list{
+      display: flex;
+      &-item{
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+
+.main{
+  height: 100vh;
+  background-image: url(../img/aboutメイン.png);
+  background-size: cover;
+}
+
+.fv{
+  &-title{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    line-height: 2em;
+    display: inline-block;
+    padding: 100px;
+    text-align: center;
+    background-color: rgba($color: #FFF, $alpha: 0.7);
+    box-shadow: 0 0 8px #324556;
+  }
+
+}//.fv-title-main
+
+.fv-sub{
+  &-flex{
+    align-items: center;
+    display: flex;
+    &-desc{
+      font-size: 1.5em;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+
+.philosophy{
+  padding: 60px 0;
+  &-flex{
+    display: flex;
+    &-container{
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      &-title{
+        font-size: 1.2em;
+        font-weight: normal;
+        margin-bottom: 15px;
+      }
+      &-desc{
+        margin-top: 15px;
+        line-height: 1.2em;
+      }
+    }
+    &-container:not(:last-child){
+      margin-right: 1%;
+    }
+  }
+}
+
+
+.mission{
+  padding: 60px 0;
+  background-color: #fff;
+  &-flex{
+    display: flex;
+    &-container{
+      font-size: 1.2em;
+      text-align: center;
+      width: 50%;
+      padding: 100px 0;
+      color: #fff;
+      background-color: #6A83A4 ;
+    }
+  }
+  &-origin{
+    padding: 30px 0;
+    text-align: center;
+    &-title{
+      line-height: 2em;
+      &-main{
+        font-size: 1.5em;
+        font-weight: normal;
+      }
+    }
+    &-img{
+      width: 40%;
+      margin: auto;
+    }
+  }
+}
+.navy{
+  background-color: #324556;
+}
+
+.greeting{
+  padding: 60px 0;
+  display: flex;
+  &-left{
+    width: 35%;
+    margin-right: 2%;
+  }
+  &-right{
+    margin-top: 30px;
+    line-height: 2em;
+    &-desc{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+.member{
+  background-color: #fff;
+  padding-bottom:30px ;
+  &-title{
+    padding: 30px 0;
+  }
+  &-flex{
+    display: flex;
+    flex-wrap: wrap;
+    &-container{
+      display: flex;
+      width: (100% / 3);
+      &-desc{
+        width: 40%;
+        padding: 5% 0 0 5%;
+        &-name{
+          margin-bottom: 15px;
+        }
+        &-bottom{
+          padding-top: 150px;
+        }
+
+      }
+      &-img{
+        width: 60%;
+        vertical-align: bottom;
+      }
+      
+      
+    }
+  }
+}
+
+.FCDFDF{
+  background-color: #FCDFDF;
+}
+.C5A9A9{
+  background-color: #C5A9A9;
+}
+.D1E1EF{
+  background-color: #D1E1EF;
+}
+.ABC5D6{
+  background-color: #ABC5D6;
+}
+.ADB7BF{
+  background-color : #ADB7BF;
+}
+.EEEEEE{
+  background-color: #EEEEEE;
+}
+.F2D3EF{
+  background-color: #F2D3EF;
+}
+
+
+.contact{
+  background-color: #fff;
+  padding: 60px 0;
+  &-flex{
+    display: flex;
+    &-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &-desc{
+        position: absolute;
+        &-title{
+          font-size: 1.5em;
+          font-weight: normal;
+          margin-bottom: 15px;
+        }
+        &-p{
+          line-height: 1.5em;
+        }
+        &-btn{
+          display: inline-block;
+          background-color: #232323;
+          color: #fff;
+          padding: 20px 40px;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  width: 70%;
+  margin: auto;
+  padding-top:30px ;
+  &-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title{
+      border-bottom: 1px solid #232323;
+      font-weight: normal;
+      font-size: 1.5em;
+    }
+    &-address{
+      line-height: 1.5em;
+    }
+  }
+  &-nav{
+    &-list{
+      margin-top: 30px;
+      display: flex;
+      &-item{
+        margin-right: 30px;
+      }
+    }
+  }
+  &-copy{
+    font-size: .5em;
+    text-align: center;
+    padding: 30px 0;
+  }
+}

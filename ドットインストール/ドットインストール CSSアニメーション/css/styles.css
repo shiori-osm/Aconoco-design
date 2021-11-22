@@ -1,0 +1,72 @@
+body{
+  padding: 64px;
+}
+/* .box{
+  width: 100px;
+  height:100px;
+  background-color: orange;
+
+  animation-name: move;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards;*/ /*100%の位置でとまってくれる */
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  /* animation-direction:reverse ;
+  animation-direction: alternate-reverse; */
+
+/* } */
+/*@keyframes move{
+  0%{
+    transform: none;
+  }
+  50%{transform: translateX(100px) rotate(360deg);}
+  100%{transform: translateX(200px) rotate(300deg);}
+} */
+
+/* .btn{
+  background-color: hsl(200,100%,20%);
+  padding: 16px 32px;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow:  0 8px 16px rgba(0,0,0,0.5);
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+
+  transition: background-color 0.3s;
+}
+.btn:hover{
+  background-color: hsl(200,100%,40%);
+} */
+
+.message{
+  width: 300px;
+  padding: 8px 16px;
+  background: #2c2c2c;
+  color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0 ,0,0,0.4);
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+
+  animation-name: popup;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes popup{
+  0%{
+    transform: translateY(20px);
+    opacity: 0;
+}
+  20%,80%{
+    transform: none;
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}

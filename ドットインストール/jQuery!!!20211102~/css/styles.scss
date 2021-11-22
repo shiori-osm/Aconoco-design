@@ -1,0 +1,23 @@
+// .red-text{
+//   color: red;
+//   font-weight: bold;
+// }
+
+// li{
+//   cursor: pointer;
+// }
+// li:hover::after{
+//   content: "[x]";
+//   font-size: 0.8em;
+//   color:gray;
+//   margin-left: 4px;
+// }
+
+body{
+  text-align: center;
+}
+#back-to-top{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}

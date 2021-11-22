@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  
+  <!-- /.header-contents -->
+  <header>
+    <div class="header-contents">
+      <h1>HTMLを書き換える</h1>
+      <h2>要素を取得する</h2>
+    </div>
+  </header>
+  
+  <!-- /.main-wrapper -->
+  <div class="main-wrapper">
+    <section>
+      <p id="choice">ここに日時を表示します</p>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer>JavaScript Samples</footer>
+  <script>
+    'use strict';
+    // <p id="choice"></p>のtextContentをnewDateにする
+    document.getElementById('choice').textContent = new Date;
+    console.log(document.getElementById('choice').textContent);
+  </script>
+</body>
+</html>
